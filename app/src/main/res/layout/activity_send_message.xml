@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.surabheesinha.mobilelocatorapp.MainActivity"
+    android:background="@drawable/ring2"
+    >
+
+<LinearLayout
+    android:id="@+id/linearLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Number"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Message"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentLeft="true"
+android:layout_alignParentRight="true"
+android:layout_below="@+id/linearLayout1"
+android:layout_marginTop="72dp" >
+
+<Button
+    android:id="@+id/send"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.53"
+    android:background="@xml/next_button"
+    android:onClick="send"
+    android:text="Send Message"
+    android:textColor="#FFFFFF" />
+
+</LinearLayout>
+    </RelativeLayout>
